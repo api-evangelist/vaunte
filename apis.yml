@@ -1,7 +1,24 @@
 aid: vaunte
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vaunte.png
 name: Vaunte
-description: Vaunte is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vaunte was a New York fashion commerce startup, backed by Battery Ventures,
+  that let shoppers buy items directly from the closets of socialites, stylists, editors,
+  and models (the 2013 site billed itself as "Shop fashion closets of socialites, stylists,
+  editors, and models"). The original marketplace is no longer operating, and today
+  vaunte.com hosts an unrelated fashion and lifestyle content site with no API or
+  developer surface. Tracked in the API Evangelist network as a Battery Ventures
+  portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/vaunte/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,30 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fashion
+- Commerce
+- Marketplace
+- Resale
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/vaunte-domain-security.yml
+- type: Website
+  url: https://www.vaunte.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
